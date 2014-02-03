@@ -4,12 +4,12 @@ describe "StaticPages" do
   
 	describe "Home page" do
 		it "should have the h1 'Sample App'" do
-			visit '/static pages/home'
+			visit '/static_pages/home'
 			page.should have selector('h1', :text => 'Sample App')
 		end
 
 		it "should have the title 'Home'" do 
-			visit '/static pages/home' 
+			visit '/static_pages/home' 
 			page.should have selector('title', :text => "Ruby on Rails Tutorial Sample App | Home")
 		end 
 	end
@@ -17,23 +17,23 @@ describe "StaticPages" do
 
   describe "Help page" do
 		it "should have the h1 'Help'" do
-			visit '/static pages/help'
+			visit '/static_pages/help'
 			page.should have selector('h1', :text => 'Help')
 		end
 
 		it "should have the title 'Help'" do 
-			visit '/static pages/help' 
+			visit '/static_pages/help' 
 			page.should have selector('title',:text => "Ruby on Rails Tutorial Sample App | Help")
 		end 
 	end
 
 	describe "About page" do
 		it "should have the h1 'About Us'" do
-			visit '/static pages/about'
+			visit '/static_pages/about'
 			page.should have selector('h1', :text => 'About Us')
 		end
 		it "should have the title 'About Us'" do 
-			visit '/static pages/about' 
+			visit '/static_pages/about' 
 			page.should have selector('title',:text => "Ruby on Rails Tutorial Sample App | About Us")
 		end 
 	end
